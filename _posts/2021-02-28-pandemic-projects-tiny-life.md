@@ -76,8 +76,9 @@ everyyhing off.
 
 Github repository [here][4].
 
+{% include footer.md %}
 
 [1]: https://www.adafruit.com/product/1501
 [2]: https://www.adafruit.com/product/3500
 [3]: https://www.conwaylife.com/wiki/List_of_common_oscillators
-[4]: https://www.
+[4]: https://github.com/elimbaum/trinket-life

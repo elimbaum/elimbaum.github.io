@@ -88,6 +88,8 @@ ssh macmini-crypt "echo -ne \"$PASSWD\" > /lib/cryptsetup/passfifo"
 
 [How to install and configure Dropbear on Linux][3]
 
+{% include footer.md %}
+
 [1]: https://github.com/dracut-crypt-ssh/dracut-crypt-ssh
 
 [2]: http://blog.neutrino.es/2011/unlocking-a-luks-encrypted-root-partition-remotely-via-ssh/

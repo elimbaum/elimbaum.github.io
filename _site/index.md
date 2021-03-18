@@ -1,4 +1,4 @@
-{% include_relative navbar.md %}
+{% include navbar.md %}
 
 This is Eli Baum’s personal website.
 
