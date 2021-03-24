@@ -5,7 +5,7 @@ permalink: /readme
 # readme
 {:.no_toc}
 
-You're either reading this on [github][1], or [hosted on the web via github pages][2]. two birds, etc. :) This is a meta-page; a page for notes about the creation and operation of this website.
+You're either reading this on [github][1], or [hosted on the web via github pages][2]. This is a meta-page, for notes about the creation and operation of this website.
 
 1. TOC
 {:toc}
@@ -16,10 +16,9 @@ You're either reading this on [github][1], or [hosted on the web via github page
 - pictures and finish about
 - finish life post
 - add dates (month year? "%b %Y" front page and on post.)
-- make meta page/readme!
-- favicon
-- does `_site` need to be in git? guess it can't hurt
+- favicon?
 - broken link crawler
+- new theme?
 
 ## Local usage
 `> bundle exec jekyll serve`
@@ -41,6 +40,8 @@ Add `{:.no_toc}` below headings (such as the title) which should not be included
 
 - 404 page should be in base directory with front matter `permalink: /404`.
 - Posts must use the format `YYYY-MM-DD-XXXX`.
+- Custom styling can be added with `style.scss`, as long as that file also imports the theme's style.
+- Added CSS rule so that centered captions will be created from any *italicized text* directly following an image.
 
 ## Personal domain
 

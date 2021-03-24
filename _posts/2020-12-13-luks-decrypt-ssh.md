@@ -2,8 +2,6 @@
 title: "LUKS decrypt over ssh"
 ---
 
-# LUKS Decrypt over SSH
-
 If you're using LUKS encyption for your system drive, there's no way, by
 default, to unlock a remote machine (you need a keyboard and monitor).
 
@@ -87,8 +85,6 @@ ssh macmini-crypt "echo -ne \"$PASSWD\" > /lib/cryptsetup/passfifo"
 [Unlocking a LUKS encrypted root partition remotely via SSH][2]
 
 [How to install and configure Dropbear on Linux][3]
-
-{% include footer.md %}
 
 [1]: https://github.com/dracut-crypt-ssh/dracut-crypt-ssh
 

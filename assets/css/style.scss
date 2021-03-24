@@ -1,0 +1,25 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+p.date {
+    font-style: italic;
+    text-align: right;
+}
+
+body {
+    max-width: 50em;
+    margin: auto;
+}
+
+img {
+    margin: auto;
+    display: block;
+
+    /* captions */
+    + em {
+        text-align: center;
+        display: block;
+    }
+}

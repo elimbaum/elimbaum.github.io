@@ -1,12 +1,8 @@
 ---
-layout: post
 title: "pandemic projects: tiny game of life"
 ---
 
-# tiny game of life
 I love Conway's Game of Life, and I had a small OLED display lying around that I thought would be perfect for a tiny Life-in-a-box contraption.
-
-Github repository [here][4].
 
 Most of the effort here went into trying to get the code to fit into an [ATtiny85 dev board][1] (only 512 bytes of RAM, half of which were required just to store the 64x32 board). But this became quite a headache — I didn’t have a good way of debugging the ATtiny, it was incredibly slow, and I had to reimplement a lot of the Adafruit OLED Graphics library. Eventually, I subbed out a [pin-compatible Trinket M0 board][2], which blew the ATtiny away (48MHz 32-bit CPU; 32KB RAM; only \$2 more) and was generally much more of a pleasure to work with.
 
@@ -21,7 +17,7 @@ Once I had a basic implementation working, I had to figure out how to keep thing
 
 My first attempt was to just count the number of alive cells. But this gives a lot of false positives (i.e. gliders moving across the board). Next, I thought about generating a hash of the current state. I settled on `djb2a`, usually used as a lightweight string hash function, but it did the job here.
 
-Every six frames, I compute a new hash (treating blocks on 8 cells as a byte) and compare it to the last one. If it’s same, we must be in a 2-, 3-, or 6- period oscillation. This covers the vast majority of common cases according to a ["census" of Game of Life oscillators][3]; the most common oscillator, a 2-period "blinker", occurs with relative frequency 99%.
+Every six frames, I compute a new hash (treating blocks on 8 cells as a byte) and compare it to the last one. If it’s same, we must be in a 2-, 3-, or 6- period oscillation. This covers the vast majority of common cases, according to a ["census" of Game of Life oscillators][3]; the most common oscillator, a 2-period "blinker", occurs with relative frequency 99%.
 
 ![blinker oscillator animation](/assets/img/life-blinker.gif)
 
@@ -63,7 +59,7 @@ Redoing my math from above, if the display update takes 28 ms, my code is runnin
 
 ## Hardware and Enclosures
 
-![adventure time bmo](/assets/img/life-bmo.png)
+<img src="/assets/img/life-bmo.png" alt="adventure time BMO" width="25%"/>
 
 Originally I thought it would be fun to put this inside of a 3D-printed model of BMO, from Adventure Time. I've never seen the show but I think they're an adorable character. However, I don't have easy access to a 3D printer during lockdown, so for now I'm just going to solder this onto a protoboard, and figure out the enclosure later.
 
@@ -75,8 +71,6 @@ everyyhing off.
 > gif of it running
 
 Github repository [here][4].
-
-{% include footer.md %}
 
 [1]: https://www.adafruit.com/product/1501
 [2]: https://www.adafruit.com/product/3500

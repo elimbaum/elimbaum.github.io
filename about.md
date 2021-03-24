@@ -34,5 +34,3 @@ I also volunteer with [Code for DC](https://codefordc.org/) and [Kitchio](https:
 - [linkedin](https://www.linkedin.com/in/elibaum/)
 - [keybase](https://keybase.io/elibaum)
 - [elimbaum@gmail.com](mailto:elimbaum@gmail.com)
-
-{% include footer.md %}
