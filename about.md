@@ -6,7 +6,7 @@ permalink: /about
 
 I am an aspiring mad scientist who likes building things and solving puzzles.
 
-I am currently an engineer at the U.S. Department of State. Professionally, I am interested in cryptography and privacy; embedded systems; and cellular networks.
+I am currently an engineer at the U.S. Department of State. Professionally, I am interested in cryptography and privacy, embedded systems, and cellular networks.
 
 Non-professionally, I like
 
@@ -23,8 +23,8 @@ I also volunteer with [Code for DC](https://codefordc.org/) and [Kitchio](https:
 
 ### previously
 
-- IBM Systems, Burn-In & Test (internship)
-- InterSystems Corporation, Quality Development (internship)
+- [IBM Systems](https://www.ibm.com/it-infrastructure), Burn-In & Test (internship)
+- [InterSystems Corporation](https://www.intersystems.com/), Quality Development (internship)
 - [Eli Whitney Museum](https://eliwhitney.org) (apprenticeship)
 
 ### elsewhere
@@ -35,3 +35,4 @@ I also volunteer with [Code for DC](https://codefordc.org/) and [Kitchio](https:
 - [keybase](https://keybase.io/elibaum)
 - [elimbaum@gmail.com](mailto:elimbaum@gmail.com)
 
+{% include footer.md %}
