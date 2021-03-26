@@ -18,12 +18,14 @@ You're either reading this on [github][1], or [hosted on the web via github page
 - add dates (month year? "%b %Y" front page and on post.)
 - favicon?
 - broken link crawler
-- new theme?
+- new theme? I don't think I can modify `<head>` otherwise.
 
 ## Local usage
 `> bundle exec jekyll serve`
 
 Give it a few seconds after saving to regenerate.
+
+To access from other devices on LAN, add `-H 0.0.0.0`. Note that this will break the title link, since it will try to link to `0.0.0.0`.
 
 ## Jekyll/Kramdown notes
 
@@ -42,6 +44,8 @@ Add `{:.no_toc}` below headings (such as the title) which should not be included
 - Posts must use the format `YYYY-MM-DD-XXXX`.
 - Custom styling can be added with `style.scss`, as long as that file also imports the theme's style.
 - Added CSS rule so that centered captions will be created from any *italicized text* directly following an image.
+- To force a width for an image, use HTML `img` tag instead of Markdown. (actually, looks like kramdown _does_ support extra attributes with `{: ...}` syntax.)
+    + `![alt](/img.jpeg){: width="25%"}`
 
 ## Personal domain
 

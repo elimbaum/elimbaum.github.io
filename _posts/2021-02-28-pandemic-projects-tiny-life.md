@@ -64,11 +64,14 @@ Redoing my math from above, if the display update takes 28 ms, my code is runnin
 Originally I thought it would be fun to put this inside of a 3D-printed model of BMO, from Adventure Time. I've never seen the show but I think they're an adorable character. However, I don't have easy access to a 3D printer during lockdown, so for now I'm just going to solder this onto a protoboard, and figure out the enclosure later.
 
 I also added a power button so I don't need to unplug the Trinket to turn
-everyyhing off.
+evertyhing off.
 
-> final pic
+![final prototoboard version](/assets/img/life-final.jpeg)
+*Protoboard version. Note broken corner. Black strip in middle probably due to camera shutter speed being faster than display update rate.*
 
-> gif of it running
+After soldering everything together on the protobard, I realized that I was only seeing every other row of the display! At first I suspected some weird power issues, or software, or my eyes, but it turns out it's just an [unfortunate hardware failure][5] - it seems that I broke the corner of the glass while soldering, and somehow that causes alternating rows to stop working (maybe it's left side even, right side odd). Luckily, since I am spacing the cells out every other row, this doesn't have a huge impact - just the text looks a little weird. But I can live with it.
+
+![final prototoboard version](/assets/img/life-final-animated.gif)
 
 Github repository [here][4].
 
@@ -76,3 +79,4 @@ Github repository [here][4].
 [2]: https://www.adafruit.com/product/3500
 [3]: https://www.conwaylife.com/wiki/List_of_common_oscillators
 [4]: https://github.com/elimbaum/trinket-life
+[5]: https://github.com/ThingPulse/esp8266-oled-ssd1306/issues/179
