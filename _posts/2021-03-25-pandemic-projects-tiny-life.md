@@ -6,8 +6,8 @@ I love Conway's Game of Life, and I had a small OLED display lying around that I
 
 Most of the effort here went into trying to get the code to fit into an [ATtiny85 dev board][1] (only 512 bytes of RAM, half of which were required just to store the 64x32 board). But this became quite a headache — I didn’t have a good way of debugging the ATtiny, it was incredibly slow, and I had to reimplement a lot of the Adafruit OLED Graphics library. Eventually, I subbed out a [pin-compatible Trinket M0 board][2], which blew the ATtiny away (48MHz 32-bit CPU; 32KB RAM; only \$2 more) and was generally much more of a pleasure to work with.
 
-![breadboard protoype](/assets/img/life-breadboard.jpeg)
-*Breadboard prorotype*
+![breadboard prototype](/assets/img/life-breadboard.jpeg)
+*Breadboard prototype*
 
 ## The End of the World?
 
@@ -21,7 +21,7 @@ Every six frames, I compute a new hash (treating blocks on 8 cells as a byte) an
 
 ![blinker oscillator animation](/assets/img/life-blinker.gif)
 
-Besides the occasional (~ 1 in a 1000) case where a glider hits no obstacles and endlessly moves across the board, I have not yet observed a case where this system failed to catch a "stable" baord.
+Besides the occasional (~ 1 in a 1000) case where a glider hits no obstacles and endlessly moves across the board, I have not yet observed a case where this system failed to catch a "stable" board.
 
 ## Speed upgrades
 
@@ -47,7 +47,7 @@ as *"rotate `x` right by `n` places"*, and compiles it down to a single instruct
        0 0 1 0 0 1 0 0  25% density
     ```
 
-After many rounds of tireless and entirely unnecesary optimization, I had things down to 37 ms per generation - that's too fast to even see (and faster than I even wanted to final product to run at). But I kept going... I made a few modifications to the drawing routines, and inlined the bit-counting functions, bringing things down to 33 ms.
+After many rounds of tireless and entirely unnecessary optimization, I had things down to 37 ms per generation - that's too fast to even see (and faster than I even wanted to final product to run at). But I kept going... I made a few modifications to the drawing routines, and inlined the bit-counting functions, bringing things down to 33 ms.
 
 Don't get me wrong — this is plenty fast — but I was a bit curious why my seemingly-straightforward code was taking as long as it was. At 48 MHz, 33 ms per generation comes out to about 800 cycles per cell: maybe a few hundred instructions. Sure, there's going to be some overhead outside the main loop body, but surely a few hundred instructions to count neighboring pixels and compute the next state of the cell is too much?
 
@@ -64,14 +64,14 @@ Redoing my math from above, if the display update takes 28 ms, my code is runnin
 Originally I thought it would be fun to put this inside of a 3D-printed model of BMO, from Adventure Time. I've never seen the show but I think they're an adorable character. However, I don't have easy access to a 3D printer during lockdown, so for now I'm just going to solder this onto a protoboard, and figure out the enclosure later.
 
 I also added a power button so I don't need to unplug the Trinket to turn
-evertyhing off.
+everything off.
 
 ![final prototoboard version](/assets/img/life-final.jpeg)
 *Protoboard version. Note broken corner. Black strip in middle probably due to camera shutter speed being faster than display update rate.*
 
-After soldering everything together on the protobard, I realized that I was only seeing every other row of the display! At first I suspected some weird power issues, or software, or my eyes, but it turns out it's just an [unfortunate hardware failure][5] - it seems that I broke the corner of the glass while soldering, and somehow that causes alternating rows to stop working (maybe it's left side even, right side odd). Luckily, since I am spacing the cells out every other row, this doesn't have a huge impact - just the text looks a little weird. But I can live with it.
+After soldering everything together on the protoboard, I realized that I was only seeing every other row of the display! At first I suspected some weird power issues, or software, or my eyes, but it turns out it's just an [unfortunate hardware failure][5] - it seems that I broke the corner of the glass while soldering, and somehow that causes alternating rows to stop working (maybe it's left side even, right side odd). Luckily, since I am spacing the cells out every other row, this doesn't have a huge impact - just the text looks a little weird. But I can live with it.
 
-![final prototoboard version](/assets/img/life-final-animated.gif)
+![final protoboard version](/assets/img/life-final-animated.gif)
 
 Github repository [here][4].
 
