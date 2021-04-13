@@ -2,7 +2,7 @@
 title: "LUKS decrypt over ssh"
 ---
 
-If you're using LUKS encyption for your system drive, there's no way, by
+If you're using LUKS encryption for your system drive, there's no way, by
 default, to unlock a remote machine (you need a keyboard and monitor).
 
 We can run a lightweight ssh server, `dropbear`, from the kernel, to allow
