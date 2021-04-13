@@ -23,7 +23,7 @@ Every six frames, I compute a new hash (treating blocks on 8 cells as a byte) an
 
 Besides the occasional (~ 1 in a 1000) case where a glider hits no obstacles and endlessly moves across the board, I have not yet observed a case where this system failed to catch a "stable" baord.
 
-### Speed upgrades
+## Speed upgrades
 
 Once I moved to the Trinket M0, I made a few improvements for speed and clean-code purposes:
 
