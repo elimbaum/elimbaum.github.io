@@ -39,9 +39,9 @@ Eventually, I realized that I need to normalize the readings with respect to som
 ![proper calibration](/assets/img/tocar/cal_perfect.png)
 *Properly calibrated.*
 
-Of course, noise was always going to be a problem at greater distances, but I was mostly concerned with the near-range sensing.
+Of course, noise was always going to be a problem at greater distances, but I was mostly concerned with the near-range sensing. A moving average also helped to clean up the signals before converting them into MIDI notes.
 
-Once I moved on from one sense plate, I ran into some odd coupling issues. Since the signals at play here are so small, the plate wiring itself becomes a part of the capacitor network. I observed behavior where touching one plate would induce signals in adjacent plates (or rather, plates whose wires were touching). To solve this problem, I just had to use shielded cable; the easiest such cable at hand was RCA video cable (the red-yellow-white TV inputs of yesteryear). Then, the only real leakage was at the PCB itself, and between adjacent plates. That interference was minimal enough to not cause problems.
+Once I moved on from a single sense plate, I ran into some odd coupling issues. Since the signals at play here are so small, the plate wiring itself becomes a part of the capacitor network. I observed behavior where touching one plate would induce signals in adjacent plates (or rather, plates whose wires were touching). To solve this problem, I just had to use shielded cable; the easiest such cable at hand was RCA video cable (the red-yellow-white TV inputs of yesteryear). Then, the only real leakage was at the PCB itself, and between adjacent plates. That interference was minimal enough to not cause problems.
 
 ![inside of RCA cable](/assets/img/tocar/rca_cable.jpg){: width="50%"}
 *Inside of an RCA cable: signal passed through center, and shield was grounded*
@@ -60,6 +60,8 @@ Here's a demo video of me playing the Garageband Brass Section where you can hea
 <video width="40%" controls>
     <source src="/assets/img/tocar/trumpet.mov" type="video/mp4">
 </video>
+
+## The real thing
 
 Next, it was on to final assembly. I cut the enclosure in layers. The top layer was the most work - it had holes for wiring, buttons, and the LCD, as well as a veneer cutout to sit around the sense pads. Pictures will explain this better:
 
