@@ -6,7 +6,7 @@ I love Conway's Game of Life, and I had a small OLED display lying around that I
 
 Most of the effort here went into trying to get the code to fit into an [ATtiny85 dev board][1] (only 512 bytes of RAM, half of which were required just to store the 64x32 board). But this became quite a headache — I didn’t have a good way of debugging the ATtiny, it was incredibly slow, and I had to reimplement a lot of the Adafruit OLED Graphics library. Eventually, I subbed out a [pin-compatible Trinket M0 board][2], which blew the ATtiny away (48MHz 32-bit CPU; 32KB RAM; only \$2 more) and was generally much more of a pleasure to work with.
 
-![breadboard prototype](/assets/img/life-breadboard.jpeg)
+![breadboard prototype](/assets/img/life/breadboard.jpeg)
 *Breadboard prototype*
 
 ## The End of the World?
@@ -19,7 +19,7 @@ My first attempt was to just count the number of alive cells. But this gives a l
 
 Every six frames, I compute a new hash (treating blocks on 8 cells as a byte) and compare it to the last one. If it’s same, we must be in a 2-, 3-, or 6- period oscillation. This covers the vast majority of common cases, according to a ["census" of Game of Life oscillators][3]; the most common oscillator, a 2-period "blinker", occurs with relative frequency 99%.
 
-![blinker oscillator animation](/assets/img/life-blinker.gif)
+![blinker oscillator animation](/assets/img/life/blinker.gif)
 
 Besides the occasional (~ 1 in a 1000) case where a glider hits no obstacles and endlessly moves across the board, I have not yet observed a case where this system failed to catch a "stable" board.
 
@@ -59,19 +59,19 @@ Redoing my math from above, if the display update takes 28 ms, my code is runnin
 
 ## Hardware and Enclosures
 
-<img src="/assets/img/life-bmo.png" alt="adventure time BMO" width="25%"/>
+<img src="/assets/img/life/bmo.png" alt="adventure time BMO" width="25%"/>
 
 Originally I thought it would be fun to put this inside of a 3D-printed model of BMO, from Adventure Time. I've never seen the show but I think they're an adorable character. However, I don't have easy access to a 3D printer during lockdown, so for now I'm just going to solder this onto a protoboard, and figure out the enclosure later.
 
 I also added a power button so I don't need to unplug the Trinket to turn
 everything off.
 
-![final prototoboard version](/assets/img/life-final.jpeg)
+![final prototoboard version](/assets/img/life/final.jpeg)
 *Protoboard version. Note broken corner. Black strip in middle probably due to camera shutter speed being faster than display update rate.*
 
 After soldering everything together on the protoboard, I realized that I was only seeing every other row of the display! At first I suspected some weird power issues, or software, or my eyes, but it turns out it's just an [unfortunate hardware failure][5] - it seems that I broke the corner of the glass while soldering, and somehow that causes alternating rows to stop working (maybe it's left side even, right side odd). Luckily, since I am spacing the cells out every other row, this doesn't have a huge impact - just the text looks a little weird. But I can live with it.
 
-![final protoboard version](/assets/img/life-final-animated.gif)
+![final protoboard version](/assets/img/life/final-animated.gif)
 
 Github repository [here][4].
 

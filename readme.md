@@ -14,8 +14,7 @@ You're either reading this on [github][1], or [hosted on the web via github page
 - make better layout with navbar
 - styling
 - pictures and finish about
-- finish life post
-- add dates (month year? "%b %Y" front page and on post.)
+- make image include or module or something?
 - favicon?
 - broken link crawler
 - new theme? I don't think I can modify `<head>` otherwise.
@@ -51,7 +50,7 @@ Add `{:.no_toc}` below headings (such as the title) which should not be included
 
 HTTPS certificate is from Let's Encrypt via Github pages.
 
-I am hosting this on `elibaum.com`, with a DNS ALIAS for `www`. However, there is a [known issues][3] with Github Pages that causes navigation to `www` to show a security error: basically, Github is _only_ generating a certificate for `elibaum.com`, not `www.elibaum.com`; the latter returns a certificate for `www.github.com`, instead. (The redirect works fine for http, and returns `301 Moved Permanently`, so browswers should cache the redirect...)
+I am hosting this on `elibaum.com`, with a DNS ALIAS for `www`. However, there is a [known issues][3] with Github Pages that causes navigation to `www` to show a security error: basically, Github is _only_ generating a certificate for `elibaum.com`, not `www.elibaum.com`; the latter returns a certificate for `www.github.com`, instead. (The redirect works fine for http, and returns `301 Moved Permanently`, so browsers should cache the redirect...)
 
 <s>Ah, shoot. Just realized trying to run the website from `elibaum.com` means that my email forwarding won't work (since namecheap is providing the email forward).</s>
 
