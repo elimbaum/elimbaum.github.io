@@ -6,8 +6,17 @@ permalink: /about
 
 I am an aspiring mad scientist who likes building things and solving puzzles.
 
-I am currently an engineer at the U.S. Department of State. Professionally, I am interested in cryptography and privacy, embedded systems, and cellular networks.
+## work
+I am an electrical engineer with MITRE's [National Security Accelerator Program](https://sites.mitre.org/national-security-accelerator-program/); professionally, I am interested in cryptography and privacy, embedded systems, and communications networks.
 
+### previously
+
+- [U.S. Department of State](https://www.state.gov/bureaus-offices/under-secretary-for-management/bureau-of-information-resource-management/), IRM
+- [IBM Systems](https://www.ibm.com/it-infrastructure), Burn-In & Test (internship)
+- [InterSystems Corporation](https://www.intersystems.com/), Quality Development (internship)
+- [Eli Whitney Museum](https://eliwhitney.org) (apprenticeship)
+
+## non work
 Non-professionally, I like
 
 - local news
@@ -20,12 +29,6 @@ Non-professionally, I like
 - running
 
 I also volunteer with [Code for DC](https://codefordc.org/) and [Kitchio](https://kitchio.co/).
-
-### previously
-
-- [IBM Systems](https://www.ibm.com/it-infrastructure), Burn-In & Test (internship)
-- [InterSystems Corporation](https://www.intersystems.com/), Quality Development (internship)
-- [Eli Whitney Museum](https://eliwhitney.org) (apprenticeship)
 
 ### elsewhere
 
