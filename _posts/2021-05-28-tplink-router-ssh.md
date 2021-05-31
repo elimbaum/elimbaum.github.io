@@ -2,6 +2,8 @@
 title: "why is ssh exposed on my router? (part 1)"
 ---
 
+*Update 31 May 2021: after all that, it turns out SSH is not actually exposed to the internet. The connection was only being allowed because I* was *on the network; I thought I had tried this while connected to a VPN but maybe I had set that up incorrectly. Anyway... less concerned about this now.*
+
 I recently ran an `nmap` scan on my router, a [TP-Link Archer AX50][1]. From the LAN port, nothing looked amiss, but scanning my *external* IP address gave some interesting results:
 
 ```
