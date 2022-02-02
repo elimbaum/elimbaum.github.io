@@ -7,7 +7,7 @@ permalink: /about
 I am an aspiring mad scientist who likes building things and solving puzzles.
 
 ## work
-I am an electrical engineer with MITRE's [National Security Accelerator Program](https://sites.mitre.org/national-security-accelerator-program/); professionally, I am interested in cryptography and privacy, embedded systems, and communications networks.
+I am an electrical engineer in the Naval Division at [MITRE](https://mitre.org). Professionally, I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
 
 ### previously
 
@@ -28,7 +28,7 @@ Non-professionally, I like
 - cooking
 - running
 
-I also volunteer with [Code for DC](https://codefordc.org/) and [Kitchio](https://kitchio.co/).
+I also volunteer with [Code for DC](https://codefordc.org/).
 
 ### elsewhere
 
