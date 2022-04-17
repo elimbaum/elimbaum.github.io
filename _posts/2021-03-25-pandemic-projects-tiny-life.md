@@ -75,8 +75,23 @@ After soldering everything together on the protoboard, I realized that I was onl
 
 Github repository [here][4].
 
+## Update: April 2020
+
+The end-game detection system worked quite well -- but, as I knew, not on gliders. While glider infinite loops were quite rare, they ended up appearing enough to be annoying (i.e. once every day or so). I decided to implement a basic check for these cases: in addition to checking the has every 6 generations, I would also check the hash every 256 generations. (It takes 256 generations for a glider to return to its original position on my board.) Since complex loops are so rare, and they *may not* just be gliders, I set the program to only reset, randomly, about 1% of the time upon matching a 256-generation hash. This is very unscientific but makes me feel better that I'm more likely to see interesting looping structures emerge.
+
+This was a relatively quick fix, but when I made it, the display broke!
+
+![broken life](/assets/img/life/broken.jpg)
+
+In the above image, you can see that only about the top quarter of the display is working. The bottom half was, at first, displaying noise. I suspected a hardware issue, since I couldn't get anything to work, but eventually found an old program I had written that *did* work. In this old program, I had manually set up all of the i2c communication, rather than using Adafruit's library. The grid you see in the image is leftover from a prior run of that program (with Life currently attempting to run).
+
+After many hours of pulling my hair out, I realized that somehow, I had ended up with an *old* version of the Adafruit SSD1306 library. This was in fact a [known bug][6], having to do with a incorrectly sized buffer on Cortex M0 chips, that was [fixed in version 2.4.1][7]. After upgrading, everything was back to normal -- and detecting looping gliders, as well.
+
+
 [1]: https://www.adafruit.com/product/1501
 [2]: https://www.adafruit.com/product/3500
 [3]: https://www.conwaylife.com/wiki/List_of_common_oscillators
 [4]: https://github.com/elimbaum/trinket-life
 [5]: https://github.com/ThingPulse/esp8266-oled-ssd1306/issues/179
+[6]: https://forums.adafruit.com/viewtopic.php?f=47&t=171641
+[7]: https://github.com/adafruit/Adafruit_SSD1306/compare/2.4.0...2.4.1
