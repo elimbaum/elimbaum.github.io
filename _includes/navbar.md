@@ -1,1 +1,1 @@
-[[about]](/about) [[readme]](/readme)
+[[about]](/about) [[readme]](/readme) [[resume]](/resume)
