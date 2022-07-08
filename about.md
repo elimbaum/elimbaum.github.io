@@ -4,7 +4,7 @@ permalink: /about
 
 # about
 
-I am an aspiring mad scientist who likes building things and solving puzzles.
+I am an aspiring mad scientist who likes building things, breaking things, and solving puzzles.
 
 ## work
 I am an electrical engineer in the Naval Division at [MITRE](https://mitre.org). Professionally, I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
