@@ -2,6 +2,8 @@
 permalink: /readme
 ---
 
+{% include math.html %}
+
 # readme
 {:.no_toc}
 
@@ -56,6 +58,28 @@ I am hosting this on `elibaum.com`, with a DNS ALIAS for `www`. However, there i
 
 Nevermind! It still does. Uses an `MX` record instead of `A`, and there are apparently some smarts in there so that it doesn't forward when the messages _comes from_ the forwarding address.
 
+
+## math
+
+it works (mathjax)! Just need to 
+
+{% raw %}
+```
+{% include math.html %}
+```
+{% endraw %}
+
+at the top of the page, and then
+
+$$
+e^{i\theta} = \cos(\theta) + i\sin(\theta)
+$$
+
+`$$` for math blocks. Inline math with `\\( \\)` like this: \\(a = b\\)
+
+tada!
+
+---
 
 [1]: https://github.com/elimbaum/elimbaum.github.io
 [2]: https://elibaum.com/readme
