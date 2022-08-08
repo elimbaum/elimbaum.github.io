@@ -9,7 +9,7 @@ title: "Reverse engineering a Twine environment sensor"
 ![twine module](/assets/img/twine/twine pipe.jpg){: width="75%"}
 *The Twine Sensor. Image credit supermechanical.com*
 
-I had an old [Twine](https://twine.cc/help) environment sensor lying around. It's a discontinued product from [Supermechanical](https://supermechanical.com/) that measures temperature, vibration, and (with optional external boards) various other environmental parameters. It connects over WiFi and can run very simple scripts - if the temperature exceeds 95°F, send me an email. Turn on the light when Twine is flipped upside down.
+I had an old [Twine](https://twine.cc/help) environment sensor lying around. It's a discontinued product from [Supermechanical](https://supermechanical.com/) that measures temperature, vibration, and (with optional external boards) various other environmental parameters. It connects over WiFi and can run very simple scripts. (If the temperature exceeds 95°F, send me an email; turn on the light when Twine is flipped upside down.)
 
 As it stood, Twine was pretty much useless to me, but I figured the WiFi-enabled sensor platform could be a promising launchpad for building other IoT-esque systems. 
 
@@ -126,17 +126,17 @@ After the header, we get encrypted data. I wasn't able to discover anything here
 
 ### Control Messages
 
-These messages are not so consistent. I've highlighted where differences occurred with a tilde `~`.
+These messages are not so consistent. I've highlighted where differences occurred with a hash mark `#`.
 
 #### Poll
 
 These are sent occasionally - when Twine flips over, and also on some timer. I'm assuming this is how Twine checks for updates from the server.
 
 ```
-..u.ñl..~..K............poll..8........ÿ....gsversion......Nov 17 2012-13:47:11......rssi..~...
+..u.ñl..#..K............poll..8........ÿ....gsversion......Nov 17 2012-13:47:11......rssi..#...
 ```
 
-First difference is some counter, maybe a sequence number? Second is RSSI. The `gsversion` field is, I assume, the Gainspan firmware version, since Nov 2012 was before Twine even exited.
+First difference is some counter, maybe a sequence number? Second is RSSI. The `gsversion` field is, I assume, the Gainspan firmware version, since Nov 2012 was before Twine even existed.
 
 Hex dump:
 ```
@@ -175,7 +175,7 @@ Sent from server to twine over TCP. Always the same:
 Server response to poll when no updates are available. 
 
 ```
-........~..ÿ.............null.
+........#..ÿ.............null.
 ```
 
 Sometimes that byte is `0x00`, and sometimes it is `0x01`. Huh.
@@ -213,7 +213,7 @@ High level steps here:
 
 1. Spoof a WiFi base station with matching SSID. Since Twine fully disassociates from the network, it shouldn't be too tricky to run a false base station.
 2. Spoof a DNS server to give a malicious IP for `f-router1.0.supermechanical.net`.
-3. Trigger a poll on the Twine (periodic, flip it upside down, or maybe send a `wakeup` command), which will be routed to our malicious server.
+3. Trigger a poll on the Twine (periodically, by flipping it upside down, or maybe by sending a `wakeup` command), which will be routed to our malicious server.
 4. Reply with new, custom firmware!
 
 This basically accomplishes what I would have wanted to do for custom sensing applications. It doesn't accomplish full flexibility because I haven't figured out how to modify (or even view) the Gainspan firmware.
