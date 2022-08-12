@@ -4,7 +4,7 @@ permalink: /readme
 
 {% include math.html %}
 
-# readme
+# [readme]
 {:.no_toc}
 
 You're either reading this on [github][1], or [hosted on the web via github pages][2]. This is a meta-page, for notes about the creation and operation of this website.
@@ -18,7 +18,6 @@ You're either reading this on [github][1], or [hosted on the web via github page
 - pictures and finish about
 - make image include or module or something?
 - favicon?
-- broken link crawler
 - new theme? I don't think I can modify `<head>` otherwise.
 
 ## Local usage
