@@ -4,6 +4,8 @@ permalink: /about
 
 # about
 
+<img src="/assets/img/eli.jpeg" class="img-right" alt="photo of eli"/>
+
 I am an aspiring mad scientist who likes building things, breaking things, and solving puzzles.
 
 ## work
