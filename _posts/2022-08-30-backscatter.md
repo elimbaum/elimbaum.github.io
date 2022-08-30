@@ -12,7 +12,7 @@ If you're not familiar with the technology, backscatter radios reflect incoming 
 
 Backscatter has traditionally been limited to near-field, low-data rate applications such as RFID and electronic toll collection. While the time and resource constraints of my research meant I was unable to demonstrate a long-range system, [some exciting work from 2017][3] demonstrated that backscatter coupled with clever modulation schemes could work over kilometers.
 
-Unfortunately, the [radar range equation][5] means backscatter is not right for every scenario, as power scales inversely with the *fourth* power of distance, rather than the square. But while traditional radio systems continue to shrink, and wireless communications are pushed closer and closer to theoretical limits, we should not rule out the option of using backscatter in certain scenarios.
+Unfortunately, the [radar range equation][5] means backscatter is not right for every scenario, as power scales inversely with the *fourth* power of distance, rather than the square. But while traditional radio systems continue to shrink, and wireless communications are pushed closer and closer to theoretical limits, we should not rule out the option of using backscatter.
 
 - [Final research report][6]
 - [Git repo][7]
