@@ -19,6 +19,7 @@ You're either reading this on [github][1], or [hosted on the web via github page
 - make image include or module or something?
 - favicon?
 - new theme? I don't think I can modify `<head>` otherwise.
+- auto run link checker and linter
 
 ## Local usage
 `> bundle exec jekyll serve`
