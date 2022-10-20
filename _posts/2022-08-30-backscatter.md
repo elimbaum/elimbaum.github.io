@@ -4,6 +4,10 @@ title: "Low-power backscatter communications"
 
 ![backscatter module with test truck](/assets/img/backscatter-truck.jpeg)
 
+> Project links:
+> - **[Final research report][6]**
+> - **[Git repo][7]**
+
 As part of MITRE's [National Security Accelerator Program][1], I had the opportunity to conduct independent research on a topic of my choosing.
 
 After learning about [recent research that allowed for *gigabit* backscatter communications][2] (as opposed to the kilobit data rates that are common), I decided to try my hand at implementing a backscatter radio.
@@ -14,8 +18,6 @@ Backscatter has traditionally been limited to near-field, low-data rate applicat
 
 Unfortunately, the [radar range equation][5] means backscatter is not right for every scenario, as power scales inversely with the *fourth* power of distance, rather than the square. But while traditional radio systems continue to shrink, and wireless communications are pushed closer and closer to theoretical limits, we should not rule out the option of using backscatter.
 
-- [Final research report][6]
-- [Git repo][7]
 
 *The lawyers would like you to know that this project has been*
 
