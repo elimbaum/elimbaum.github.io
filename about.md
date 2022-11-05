@@ -8,6 +8,8 @@ permalink: /about
 
 I am an aspiring mad scientist who likes building things, breaking things, and solving puzzles.
 
+My name is pronounced like `EEli bOWm`; rhymes with "we lie brown" but if there was an `m` at the end. (IPA: **ilaɪ baʊm**)
+
 ## work
 I am an electrical engineer in the Naval Division at [MITRE](https://mitre.org). Professionally, I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
 
