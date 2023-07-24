@@ -2,6 +2,9 @@
 
 This is Eli Baum’s personal website.
 
+This fall, I will begin my PhD in cryptography at BU, advised by [Mayank Varia](https://www.mvaria.com/) and [John Liagouris](https://cs-people.bu.edu/liagos/index.html).
+
+
 ### posts
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }}) ({{ post.date | date_to_string }}, {{ post.content | strip_html | number_of_words }} words){% endfor %}

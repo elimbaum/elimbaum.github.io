@@ -11,10 +11,14 @@ I am an aspiring mad scientist who likes building things, breaking things, and s
 My name is pronounced like `EEli bOWm`; rhymes with "we lie brown" but if there was an `m` at the end. (IPA: **ilaɪ baʊm**)
 
 ## work
-I am an electrical engineer in the Naval Division at [MITRE](https://mitre.org). Professionally, I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
+
+I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
+
+Starting in fall 2023, I will be pursuing my PhD at Boston University under [Mayank Varia](https://www.mvaria.com/) and [John Liagouris](https://cs-people.bu.edu/liagos/index.html).
 
 ### previously
 
+- [MITRE](https://mitre.org), Naval Division
 - [U.S. Department of State](https://www.state.gov/bureaus-offices/under-secretary-for-management/bureau-of-information-resource-management/), IRM
 - [IBM Systems](https://www.ibm.com/it-infrastructure), Burn-In & Test (internship)
 - [InterSystems Corporation](https://www.intersystems.com/), Quality Development (internship)
