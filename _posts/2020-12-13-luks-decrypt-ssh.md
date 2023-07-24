@@ -80,7 +80,7 @@ ssh macmini-crypt "echo -ne \"$PASSWD\" > /lib/cryptsetup/passfifo"
   be able to change the port. Then again, probably doesn't matter on local
   network.
 
-*Update, July 2023*: after a power failure, I was unable to log in to dropbear, seeing scary messages about rejected keys. After plugging in a USB keyboard to decrypt, I found [this ServerFault post](https://serverfault.com/questions/1080816/how-do-i-get-logs-from-my-dropbear-initramfs-ssh-host), whcih details the same issue. [This linked blog post](https://dev.to/bowmanjd/upgrade-ssh-client-keys-and-remote-servers-after-fedora-33-s-new-crypto-policy-47ag) describing the fix: basically, we just needed to force-allow RSA. The best way to solve this would be to update keys to not use RSA, but I'm ok with this solution. The SSH config on my laptop now looks like:
+*Update, July 2023*: after a power failure, I was unable to log in to dropbear, seeing scary messages about rejected keys. After plugging in a USB keyboard to decrypt, I found [this ServerFault post](https://serverfault.com/questions/1080816/how-do-i-get-logs-from-my-dropbear-initramfs-ssh-host), which details the same issue. [This linked blog post](https://dev.to/bowmanjd/upgrade-ssh-client-keys-and-remote-servers-after-fedora-33-s-new-crypto-policy-47ag) describing the fix: basically, we just needed to force-allow RSA. The best way to solve this would be to update keys to not use RSA, but I'm ok with this solution. The SSH config on my laptop now looks like:
 
 ```
 # "normal" access
