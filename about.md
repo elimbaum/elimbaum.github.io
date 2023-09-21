@@ -14,7 +14,7 @@ My name is pronounced like `EEli bOWm`; rhymes with "we lie brown" but if there 
 
 I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
 
-Starting in fall 2023, I will be pursuing my PhD at Boston University under [Mayank Varia](https://www.mvaria.com/) and [John Liagouris](https://cs-people.bu.edu/liagos/index.html).
+As of Fall 2023, I am pursuing my PhD at Boston University under [Mayank Varia](https://www.mvaria.com/) and [John Liagouris](https://cs-people.bu.edu/liagos/index.html). I am jointly a member of [BUSec](https://www.bu.edu/cs/groups/busec/) and the [CASP Lab](https://sites.bu.edu/casp/people/).
 
 ### previously
 
@@ -36,12 +36,13 @@ Non-professionally, I like
 - cooking
 - running
 
-I also volunteer with [Code for DC](https://codefordc.org/) on the [DARIA](https://www.dariaservices.org/) team. We work with the [DC Abortion Fund](https://dcabortionfund.org/) and others to build and maintain their tech stacks, so funds can focus on their mission. We're on Github [here](https://github.com/DARIAEngineering/dcaf_case_management).
+When I lived in DC, I volunteered with [Code for DC](https://codefordc.org/) on the [DARIA](https://www.dariaservices.org/) team. DARIA works with the [DC Abortion Fund](https://dcabortionfund.org/) and others to build and maintain their tech stacks, so funds can focus on their mission. We're on Github [here](https://github.com/DARIAEngineering/dcaf_case_management).
 
 ### elsewhere
 
 - [github](https://github.com/elimbaum) (this website hosted on github pages)
-- [twitter](https://twitter.com/_____eb__)
+- [~~twitter~~ X](https://twitter.com/_____eb__)
 - [linkedin](https://www.linkedin.com/in/elibaum/)
 - [keybase](https://keybase.io/elibaum)
-- [elimbaum@gmail.com](mailto:elimbaum@gmail.com)
+- elimbaum at gmail dot com
+- elibaum at bu dot edu

@@ -2,8 +2,7 @@
 
 This is Eli Baum’s personal website.
 
-This fall, I will begin my PhD in cryptography at BU, advised by [Mayank Varia](https://www.mvaria.com/) and [John Liagouris](https://cs-people.bu.edu/liagos/index.html).
-
+I am PhD student at Boston University, advised by [John Liagouris](https://cs-people.bu.edu/liagos/index.html) and [Mayank Varia](https://www.mvaria.com/).  We are working on building usable and secure multi-party computation.
 
 ### posts
 {% for post in site.posts %}

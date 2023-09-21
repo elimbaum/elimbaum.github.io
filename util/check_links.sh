@@ -3,13 +3,15 @@
 ROOT=$(git rev-parse --show-toplevel)
 
 # this is good enough
-URL_REGEX='https\?:[^\)"\S]*'
+URL_REGEX='https\?:[^\)"[:space:]]*'
 
-for url in $(grep $URL_REGEX -ohIR $ROOT | sort | uniq)
+for url in $(grep $URL_REGEX -ohIR $ROOT --exclude-dir _site | sort | uniq)
 do
-    curl -sS $url > /dev/null
+    curl -fsS $url > /dev/null
     if [[ $? -ne 0 ]]
     then
-        echo $url
+        echo "FAILED" $url
+    else
+        # echo "   ok $url"
     fi
 done
