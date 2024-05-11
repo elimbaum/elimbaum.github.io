@@ -36,7 +36,7 @@ Non-professionally, I like
 - cooking
 - running
 
-When I lived in DC, I volunteered with [Code for DC](https://codefordc.org/) on the [DARIA](https://www.dariaservices.org/) team. DARIA works with the [DC Abortion Fund](https://dcabortionfund.org/) and others to build and maintain their tech stacks, so funds can focus on their mission. We're on Github [here](https://github.com/DARIAEngineering/dcaf_case_management).
+When I lived in DC, I volunteered with Code for DC (now [Civic Tech DC](https://www.civictechdc.org/)) on the [DARIA](https://www.dariaservices.org/) team. DARIA works with the [DC Abortion Fund](https://dcabortionfund.org/) and others to build and maintain their tech stacks, so funds can focus on their mission. We're on Github [here](https://github.com/DARIAEngineering/dcaf_case_management).
 
 ### elsewhere
 
