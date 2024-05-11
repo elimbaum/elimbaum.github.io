@@ -114,9 +114,9 @@ The underlying phenomena here, as Steve mentions, is something known as "excitab
 
 So it seems like — at least in principle — you could build a computer out of fire. Dealing with spurious ignition, timing issues, and lighter-fluid refills are left as exercise to the reader.
 
-[^2]: Rössler [later protested the Large Hadron Collider][7] for fear of it creating miniature black holes.
-
 ---
+
+[^2]: Rössler [later protested the Large Hadron Collider][7] for fear of it creating miniature black holes.
 
 
 [1]: https://www.youtube.com/watch?v=SqhXQUzVMlQ
