@@ -2,11 +2,11 @@
 title: "fire computer"
 ---
 
-Steve Mould put out [a video][1] a weeks back describing a neat effect: vaporized lighter fluid in a perfectly-sized channel allows a flame to travel down the channel, almost like an electrical pulse.
+Steve Mould put out [a video][1] a few weeks back describing a neat effect: vaporized lighter fluid in a perfectly-sized channel allows a flame to travel down the channel, almost like an electrical pulse.
 
 ![still from steve's video](/assets/img/fire/steve.png){: width="50%"}
 
-In the comments, Steve said he didn't think you could use this to build logic `gates, and therefore probably no fire computer. But I think we *can* build logic gates, and thus yes fire computer. Another commenter referenced the [Wireworld Computer][2], which, while having slightly different cellular-automata rules, served as good inspiration.
+In the comments, Steve said he didn't think you could use this to build logic gates, and therefore probably no fire computer. But I think we *can* build logic gates, and thus yes fire computer. Another commenter referenced the [Wireworld Computer][2], which, while having slightly different cellular-automata rules, served as good inspiration.
 
 # the rules of fire
 
@@ -26,7 +26,7 @@ _Pulse on the left does not travel backwards up the left branch. Pulse on the ri
 
 I don't have easy access to a 3D printer, so I won't be able to confirm these are all correct. I would love to hear about any attempts to test out these theories.
 
-Since a traveling flame cannot be statically persist, to have any notion of a signal, we need a clocked system. We'll assume some sort of "ready" channel (or you could think of it as "power"). Pulses in the clock channel will correspond to the existence of a signal, whereas pulses in other channels will represent data. I'll refer to signals as being "hot" (true, on fire) or "cold" (false, not on fire).
+Since a traveling flame cannot be statically persist, to have any notion of a signal, we need a clocked system. We'll assume some sort of "ready" channel (or you could think of it as "power"). Pulses in the ready channel will correspond to the existence of a signal, whereas pulses in other channels will represent data. I'll refer to signals as being "hot" if they are on fire.
 
 # building logic gates
 
@@ -49,14 +49,14 @@ An inverted signal will take a bit longer to reach the output than `R`. So, in r
 
 ![not with proper length](/assets/img/fire/not-squiggle.png){: width="33%"}
 
-But I'll stylize this with a hash line, to signify that a wire should be stretched to the "proper" length.
+But I'll stylize this with a hash, to signify that a wire should be stretched to the "proper" length.
 
 ## diode
 Next, we'll need a diode, to prevent backpropagation of flames. Here's my idea:
 
 ![diode](/assets/img/fire/diode.png){: width="33%"}
 
-Signals coming from the left (the forward direction) travel around the perimeter of the loop and exit. However, signals from the right split at the loop and cancel each other out at the bottom. Due to the angle of the inbound line, these signals will not propagate, by property 3.
+Signals coming from the left (the forward direction) travel around the perimeter of the loop and exit. However, signals from the right split at the loop and cancel each other out at the bottom. Due to the angle of the inbound line, these signals will not travel back to `in`, by property 3.
 
 Of course, this diode has a maximum switching speed: it can't handle signals coming from both directions particularly well. As we will see below, the other gates do *not* intrinsically prevent backpropagation, which could occur even in normal circumstances. So I think copious use of diodes will be required to have a somewhat reliable circuit.
 
@@ -65,7 +65,7 @@ This is pretty simple: we just connect two wires in a T.
 
 ![or](/assets/img/fire/or.png){: width="33%"}
 
-A signal coming from either `X` or `Y` will split at the shared node and produce an output. The case where both `X` and `Y` are hot is a bit more interesting: the flames will cancel at the shared node, but (I believe) will also allow an output flame.
+A signal coming from either `X` or `Y` will split at the shared node and produce an output. The case where both `X` and `Y` are hot is a bit more interesting: the flames will cancel at the shared node, but (I believe) will also allow an output flame to progress.
 
 We do need to be careful of backpropagation here. With a single hot input, that signal will split towards the output, but will _also continue back towards the other input_. So, to make a reliable OR gate, we need diodes:
 
@@ -104,17 +104,19 @@ Though, again, we need diodes to prevent backpropagation.
 
 ![latch with diodes](/assets/img/fire/latch-diode.png){: width="40%"}
 
-Unfortunately, there is a bit of a race condition here, since each clock will send pulses into the diode. The "reset" pulse will need to travel from the diode into the clock loop before any such clock pulse resets it on the diode branch. This can be mostly avoided if the clock frequency is low and the diode is very close to the loop. We may also be able to send a _series_ of pulses to ensure at least one pulse makes it through and disables the clock.
+Unfortunately, there is a bit of a race condition here, since each active clock will send pulses into the diode. The "reset" pulse will need to travel from the diode into the clock loop before any such clock pulse resets it on the diode branch. This can be mostly avoided if the clock frequency is low and the diode is very close to the loop. We may also be able to send a _series_ of pulses to ensure at least one pulse makes it through and disables the clock.
 
 # prior work
 
 The underlying phenomena here, as Steve mentions, is something known as "excitable media." It seems like building circuits in excitable media is actually a relatively well-studied phenomena, though mostly with respect to chemical reactions.
 
-[Rössler 1974][3] appears to be one of the earliest works on this matter[^2]; [Tóth and Showalter 1995][4] considered the design of logic gates in a [specific chemical reaction][5]. [Motoike and Adamatzky][6] considered circuits built under a tri-state model (true, false, "nonsense"), which allows for more expressive designs in what is fundamentally an analog medium.
+[Rössler 1974][3] appears to be one of the earliest works on this matter[^2]; [Tóth and Showalter 1995][4] considered the design of logic gates in a [specific chemical reaction][5]. [Motoike and Adamatzky 2005][6] considered circuits built under a tri-state model (true, false, "nonsense"), which allows for more expressive designs in what is fundamentally an analog medium.
 
-So it seems like - at least in principle - you could build a computer out of fire. Dealing with spurious ignition, timing issues, and lighter-fluid refills are left as exercise to the reader.
+So it seems like — at least in principle — you could build a computer out of fire. Dealing with spurious ignition, timing issues, and lighter-fluid refills are left as exercise to the reader.
 
 [^2]: Rössler [later protested the Large Hadron Collider][7] for fear of it creating miniature black holes.
+
+---
 
 
 [1]: https://www.youtube.com/watch?v=SqhXQUzVMlQ
