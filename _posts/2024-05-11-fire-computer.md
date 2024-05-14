@@ -1,6 +1,8 @@
 ---
-title: "fire computer"
+title: "[not so] fire computer"
 ---
+
+> **Update 13 May:** Steve Mould pointed out that property 3, below, is not actually true! I rewatched the video and, indeed, there are some clear counterexamples of property 3 (for example, the split-merge racetrack). So, we can **NOT** build a computer. See [below](#addendum) for some further thoughts.
 
 Steve Mould put out [a video][1] a few weeks back describing a neat effect: vaporized lighter fluid in a perfectly-sized channel allows a flame to travel down the channel, almost like an electrical pulse.
 
@@ -114,6 +116,22 @@ The underlying phenomena here, as Steve mentions, is something known as "excitab
 
 So it seems like — at least in principle — you could build a computer out of fire. Dealing with spurious ignition, timing issues, and lighter-fluid refills are left as exercise to the reader.
 
+# addendum
+
+(13 May) So, no property 3. This is unfortunate and basically breaks my entire construction. Steve brought up another idea for building a diode:
+
+> Someone suggested a track that abruptly changes in height. A flame travelling towards the "cliff" from below would be able to ignite the vapour on the track above, but a flame approaching the cliff from the top would not be able to light the vapour from the track below. And so we have a kind of flame diode could potentially make all these things possible. I haven't tried it though. 
+
+Let's assume this works. What can we do with diodes? Unfortunately, still not much: `OR` gates are easy; the same idea as above works. But we can't build an inverter. The Wikipedia article on [Diode Logic][8] sounds the death knell:
+
+> An active device ... is additionally required to provide logical inversion (NOT) for functional completeness...
+
+And it is far from evident to me that we can actually build an active device with the flames! Looking back through some of the chemical work I cited above, it seems like they need to do some tricks with wave properties to get an active device, so maybe it's still possible, but would require careful analysis and experimentation.
+
+_Thinking a bit more about why my original idea doesn't work:_ consider the minimal functionality we need for a `NOT` gate. Signals from the left only travel up; signals from the top only travel to the right. We can ignore signals input from the right for now. And now this starts to sound a lot like an [RF Circulator][9], a particularly clever piece of radio-frequency equipment that, well, provides precisely this functionality.
+
+So, if we could build a fire-circulator, then we get `NOT` gates, and thus functional completeness. Unfortunately, I don't have any ideas for how to do this right now.
+
 ---
 
 [^2]: Rössler [later protested the Large Hadron Collider][7] for fear of it creating miniature black holes.
@@ -126,3 +144,5 @@ So it seems like — at least in principle — you could build a computer out of
 [5]: https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction
 [6]: https://doi.org/10.1016/j.chaos.2004.07.021
 [7]: https://en.wikipedia.org/wiki/Otto_R%C3%B6ssler
+[8]: https://en.wikipedia.org/wiki/Diode_logic
+[9]: https://en.wikipedia.org/wiki/Circulator
