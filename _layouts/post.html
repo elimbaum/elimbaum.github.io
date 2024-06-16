@@ -9,13 +9,13 @@ layout: default
 
 <footer>
 <hr/>
-<a href="/">[home]</a>
-<a href="#">[top]</a>
+<a href="/">home</a> |
+<a href="#">top</a>
 {% if page.next %}
-<a href="{{ page.next.url }}">[next]</a>
+| <a href="{{ page.next.url }}">next</a>
 {% endif %}
 {% if page.previous %}
-<a href="{{ page.previous.url }}">[previous]</a>
+| <a href="{{ page.previous.url }}">previous</a>
 {% endif %}
 </footer>
 

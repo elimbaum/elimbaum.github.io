@@ -4,7 +4,7 @@ permalink: /readme
 
 {% include math.html %}
 
-# [readme]
+# readme
 {:.no_toc}
 
 You're either reading this on [github][1], or [hosted on the web via github pages][2]. This is a meta-page, for notes about the creation and operation of this website.

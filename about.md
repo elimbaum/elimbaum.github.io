@@ -2,7 +2,7 @@
 permalink: /about
 ---
 
-# [about]
+# about
 
 <img src="/assets/img/eli.jpeg" class="img-right" alt="photo of eli"/>
 
