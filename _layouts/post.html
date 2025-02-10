@@ -11,11 +11,11 @@ layout: default
 <hr/>
 <a href="/">home</a> |
 <a href="#">top</a>
-{% if page.next %}
-| <a href="{{ page.next.url }}">next</a>
-{% endif %}
 {% if page.previous %}
 | <a href="{{ page.previous.url }}">previous</a>
+{% endif %}
+{% if page.next %}
+| <a href="{{ page.next.url }}">next</a>
 {% endif %}
 </footer>
 
