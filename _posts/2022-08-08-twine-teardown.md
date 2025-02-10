@@ -6,7 +6,7 @@ title: "Reverse engineering a Twine environment sensor"
 
 ---
 
-![twine module](/assets/img/twine/twine pipe.jpg){: width="75%"}
+![twine module](/assets/img/twine/twine pipe.jpg)
 *The Twine Sensor. Image credit supermechanical.com*
 
 I had an old [Twine](https://twine.cc/help) environment sensor lying around. It's a discontinued product from [Supermechanical](https://supermechanical.com/) that measures temperature, vibration, and (with optional external boards) various other environmental parameters. It connects over WiFi and can run very simple scripts. (If the temperature exceeds 95°F, send me an email; turn on the light when Twine is flipped upside down.)

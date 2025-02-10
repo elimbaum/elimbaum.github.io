@@ -2,7 +2,7 @@
 title: a wrigley mystery
 ---
 
-![wrigley skybridge](/assets/img/wrigley/bridge.jpeg){: width="75%"}
+![wrigley skybridge](/assets/img/wrigley/bridge.jpeg)
 
 Earlier this summer, while in Chicago, I took one of those riverboat architecture tours. You can learn a lot about the city from the river; unlike many other cities I've lived in, which feel like they were merely built _alongside_ a river, you really get the sense that Chicago was fundamentally built _around_ the river. All those bridges! Anyway, it's a great tour.
 
@@ -79,7 +79,7 @@ The Chicago Tribune's offices sit just down the block from the Wrigley Building.
 - Aug 30 1931, p. 10: "A bridge ... is being built on the 14th floor level ... to connect the **general offices of the William Wrigley Jr. company.**" (emphasis mine) The offices were previously on the 14th and 15th floors of the south tower; the bridge would allow the 14th floors of both buildings to be used instead.
 - Aug 31 1931, p. 6: "...will enable a rearrangement of the general offices of the William Wrigley Jr. company"
 
-![tribune 1931](/assets/img/wrigley/tribune31.png){: width="75%"}
+![tribune 1931](/assets/img/wrigley/tribune31.png)
 *Chicago Tribune, Aug 31 1931*
 
 - Mar 29 1933, p. 20: Boulevard Bridge Bank receives US charter and is renamed *National Boulevard Bank*.[^4] (This name change explains why I was having trouble finding info on the bank under its original name.)

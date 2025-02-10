@@ -47,6 +47,7 @@ Add `{:.no_toc}` below headings (such as the title) which should not be included
 - Added CSS rule so that centered captions will be created from any *italicized text* directly following an image.
 - To force a width for an image, use HTML `img` tag instead of Markdown. (actually, looks like kramdown _does_ support extra attributes with `{: ...}` syntax.)
     + `![alt](/img.jpeg){: width="25%"}`
+    + I've added some custom CSS to default images to 75% on desktop, full-width on mobile (`< 768px`)
 
 ## Personal domain
 

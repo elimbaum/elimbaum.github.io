@@ -17,6 +17,18 @@ img {
     margin: auto;
     display: block;
 
+    // Unspecified width
+    &:not([width]) {
+        // on desktop, 75%
+        width: 75%;
+        max-width: 100%;
+
+        @media (max-width: 768px) {
+            // mobile, full width
+            width: 100%;
+        }
+    }
+
     /* captions */
     + em {
         text-align: center;
@@ -34,4 +46,13 @@ img.img-right {
     width: 40%;
     float: right;
     padding-left: 1em;
+}
+
+.dark-mode {
+    background-color: black;
+    color: lightgray;
+}
+
+.dark-mode a {
+    color: dodgerblue;
 }
