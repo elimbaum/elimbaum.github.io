@@ -41,7 +41,6 @@ When I lived in DC, I volunteered with Code for DC (now [Civic Tech DC](https://
 ### elsewhere
 
 - [github](https://github.com/elimbaum) (this website hosted on github pages)
-- [~~twitter~~ X](https://twitter.com/_____eb__)
 - [linkedin](https://www.linkedin.com/in/elibaum/)
 - [keybase](https://keybase.io/elibaum)
 - elimbaum at gmail dot com
