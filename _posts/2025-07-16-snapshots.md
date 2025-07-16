@@ -35,6 +35,7 @@ This was the first time I had my film developed locally, at [Lumentation](https:
 ![museum mirror](/assets/img/film2025/cph-mirror.jpg)
 
 ![rainy street](/assets/img/film2025/cph-street.jpg)
+*enghave plads*
 
 ![bee](/assets/img/film2025/etc-bee.jpg)
 
