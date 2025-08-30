@@ -20,7 +20,7 @@ img {
     // Unspecified width
     &:not([width]) {
         // on desktop, 75%
-        width: 75%;
+        width: 85%;
         max-width: 100%;
 
         @media (max-width: 768px) {
