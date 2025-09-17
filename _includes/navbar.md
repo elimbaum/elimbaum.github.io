@@ -1,1 +1,1 @@
-[about](/about) \| [readme](/readme) \| [scholar](https://scholar.google.com/citations?user=wTLWAJMAAAAJ) \| [resume](/resume)
+[about](/about) \| [readme](/readme) \| [research](/research) \| [resume](/resume)
