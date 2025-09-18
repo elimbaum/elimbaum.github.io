@@ -1,9 +1,7 @@
 name: Generate sitemap 
 
+# Only run this manually
 on:
-  push:
-    branches: [ master ]
-    paths: [ '**.md', '**.pdf' ]
   workflow_dispatch:
 
 jobs:
@@ -14,13 +12,20 @@ jobs:
     - name: Checkout the repo
       uses: actions/checkout@v5
       with:
-        fetch-depth: 0 
+        fetch-depth: 0
+
+    - name: Build website
+      run: |
+        sudo apt update
+        sudo apt install ruby-bundler
+        bundle install
+        bundle exec jekyll build
     
     - name: Generate the sitemap
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://www.cicirello.org/
+        base-url-path: https://elibaum.com
     
     - name: Output stats
       run: |
