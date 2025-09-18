@@ -27,6 +27,7 @@ jobs:
       with:
         base-url-path: https://elibaum.com
         path-to-root: _site/
+        sitemap-path: sitemap.xml
     
     - name: Output stats
       run: |
