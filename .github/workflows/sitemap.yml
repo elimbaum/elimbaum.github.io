@@ -26,6 +26,7 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://elibaum.com
+        path-to-root: _site/
     
     - name: Output stats
       run: |
