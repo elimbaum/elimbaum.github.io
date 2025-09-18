@@ -4,6 +4,7 @@ on:
   push:
     branches: [ master ]
     paths: [ '**.md', '**.pdf' ]
+  workflow_dispatch:
 
 jobs:
   sitemap_job:
