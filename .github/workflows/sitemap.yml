@@ -18,7 +18,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install ruby-bundler
-        bundle install
+        sudo bundle install
         bundle exec jekyll build
     
     - name: Generate the sitemap
