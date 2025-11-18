@@ -3,8 +3,6 @@ permalink: /and-claire
 layout: null
 ---
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,4 +14,3 @@ layout: null
 ( ͡~ ͜ʖ ͡°) hello there
 
 </body>
-</html>
