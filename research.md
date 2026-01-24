@@ -13,6 +13,8 @@ permalink: /research
     - **Distinguished Artifact Award!**
 
 ## talks
+- [New England Systems Day](https://newenglandsystemsday.github.io/2026/), January 2025
+- [New England Database Day](https://nedbday.github.io/2026), January 2025
 - BUSec Seminar, October 2025
 - BU Systems Seminar, September 2025
 - [SysteMPC](https://www.bu.edu/riscs/events/systempc/) (Lightning Talk), BU, July 2025
