@@ -13,6 +13,7 @@ permalink: /research
     - **Distinguished Artifact Award!**
 
 ## talks
+- [Archimedes, Athena Research Center](https://archimedesai.gr/en/events/508-archimedes-talk-on-orq-scaling-complex-multiparty-computations), Athens, May 2026
 - [New England Systems Day](https://newenglandsystemsday.github.io/2026/), January 2025
 - [New England Database Day](https://nedbday.github.io/2026), January 2025
 - BUSec Seminar, October 2025
