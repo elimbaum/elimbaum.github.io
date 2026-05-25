@@ -2,7 +2,7 @@
 
 This is Eli Baum’s personal website.
 
-I am a PhD student at Boston University, advised by [John Liagouris](https://cs-people.bu.edu/liagos/index.html) and [Mayank Varia](https://www.mvaria.com/).  We are working on building usable and secure tools for multi-party computation.
+I am a PhD student at Boston University. I work on building usable and secure tools for multi-party computation, and dabble in a few other flavors of cryptography.
 
 ### posts
 {% for post in site.posts %}

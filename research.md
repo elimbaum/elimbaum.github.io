@@ -23,5 +23,4 @@ permalink: /research
 ## etc
 - QueryShield: Cryptographically Secure Analytics in the Cloud (Demo @ [SIGMOD 2024](https://2024.sigmod.org/))
     - [paper](https://dl.acm.org/doi/10.1145/3626246.3654749)
-
-    
+- Secure MPC from a Systems Perspective (Tutorial @ [EuroSys 2026](https://sites.bu.edu/casp/S2MPC/))
