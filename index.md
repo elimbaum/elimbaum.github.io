@@ -1,3 +1,6 @@
+---
+---
+
 {% include navbar.md %}
 
 This is Eli Baum’s personal website.

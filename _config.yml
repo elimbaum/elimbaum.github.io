@@ -2,3 +2,8 @@ title: elibaum.com
 url: "https://elibaum.com"
 name: elibaum.com
 description: ""
+
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import

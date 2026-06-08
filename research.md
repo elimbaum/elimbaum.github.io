@@ -5,6 +5,7 @@ permalink: /research
 [scholar](https://scholar.google.com/citations?user=wTLWAJMAAAAJ) \| [dblp](https://dblp.org/pid/376/0257.html)
 
 ## papers
+- To Catch a Cheater: Some notes on the malicious (in)security of ORQ ([2026/1152](https://eprint.iacr.org/2026/1152))
 - ORQ: Complex Analytics on Private Data with Strong Security Guarantees ([SOSP 2025](https://sigops.org/s/conferences/sosp/2025/))
     - [post]({% post_url 2025-09-16-orq %})
     - [eprint](https://eprint.iacr.org/2025/1657), [arXiv](https://arxiv.org/abs/2509.10793), [ACM DL](https://dl.acm.org/doi/10.1145/3731569.3764833)
@@ -21,6 +22,6 @@ permalink: /research
 - [SysteMPC](https://www.bu.edu/riscs/events/systempc/) (Lightning Talk), BU, July 2025
 
 ## etc
+- Secure MPC from a Systems Perspective (Tutorial @ [EuroSys 2026](https://sites.bu.edu/casp/S2MPC/))
 - QueryShield: Cryptographically Secure Analytics in the Cloud (Demo @ [SIGMOD 2024](https://2024.sigmod.org/))
     - [paper](https://dl.acm.org/doi/10.1145/3626246.3654749)
-- Secure MPC from a Systems Perspective (Tutorial @ [EuroSys 2026](https://sites.bu.edu/casp/S2MPC/))
