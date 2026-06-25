@@ -7,3 +7,6 @@ sass:
   quiet_deps: true
   silence_deprecations:
     - import
+
+kramdown:
+  footnote_backlink: '&#x21a9;&#xfe0e;'
