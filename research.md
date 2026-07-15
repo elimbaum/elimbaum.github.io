@@ -12,6 +12,7 @@ permalink: /research
     - [github](https://github.com/CASP-Systems-BU/orq)
     - [slides](/assets/files/orq-sosp-slides.pdf)
     - **Distinguished Artifact Award!**
+    - **Extended Version** invited for publication in [ACM Transactions on Computer Systems](https://doi.org/10.1145/3820248)
 
 ## talks
 - [Archimedes, Athena Research Center](https://archimedesai.gr/en/events/508-archimedes-talk-on-orq-scaling-complex-multiparty-computations), Athens, May 2026
