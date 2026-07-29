@@ -14,7 +14,7 @@ My name is pronounced like `EEli bOWm`; rhymes with "we lie brown" but if there 
 
 I am interested in cryptography and privacy, embedded systems, and wireless communications, with a particular focus on cellular networks.
 
-As of Fall 2023, I am pursuing my PhD at Boston University. I am a member of [BUSec](https://www.bu.edu/cs/groups/busec/).
+As of Fall 2023, I am pursuing my PhD at Boston University, advised by [Kinan Dak Albab](https://www.babman.io/). I am a member of [BUSec](https://www.bu.edu/cs/groups/busec/) and the [SPACE Lab](https://space.babman.io/). Previously, I also worked with [Mayank Varia](https://www.mvaria.com/) and [John Liagouris](https://cs-people.bu.edu/liagos/).
 
 ### previously
 

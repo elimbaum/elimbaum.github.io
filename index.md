@@ -5,7 +5,7 @@
 
 This is Eli Baum’s personal website.
 
-I am a PhD student at Boston University. I work on building usable and secure tools for multi-party computation, and dabble in a few other flavors of cryptography.
+I am a PhD student at Boston University advised by [Kinan Dak Albab](https://www.babman.io/). I work on building usable and secure tools for multi-party computation, and dabble in a few other flavors of cryptography.
 
 ### posts
 {% for post in site.posts %}
