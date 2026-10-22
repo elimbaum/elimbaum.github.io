@@ -57,6 +57,9 @@ img.img-right {
     color: dodgerblue;
 }
 
-table {
-    display: table !important;
+// Center tables
+.markdown-body table {
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
 }

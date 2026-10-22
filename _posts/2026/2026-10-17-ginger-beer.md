@@ -4,7 +4,7 @@ title: "ginger beer"
 
 On the one hand, some people know how to make a good ginger beer.[^1] On the other hand, some people are wimps.
 
-The key property is that a ginger beer should kick you in the face, and not be too sweet. Your eyes should water from the vapors. You should cough. Many people are (a) afraid of being kicked in the face and (b) add too much sugar.
+The key property is that a ginger beer should kick you in the face, and not be too sweet. Your eyes should water from the vapors. You should cough. Many people (a) are afraid of being kicked in the face and (b) add too much sugar.
 
 Here is my current ranking. I will update it as I find more. Reach out if you have suggestions: `ginger.beer@elibaum.com`.
 
