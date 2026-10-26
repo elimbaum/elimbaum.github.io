@@ -17,11 +17,14 @@ Here is my current ranking. I will update it as I find more. Reach out if you ha
 7. [green bee ginger buzz](https://www.drinkgreenbee.com/products). technically a honey soda, not a ginger beer, but not bad for what it was.
 8. [fever tree premium](https://fever-tree.com/en-us/products/ginger-beer). premium is overselling it here
 9. [reeds](https://drinkreeds.com/pages/reeds-ginger-beer-landing-page). not good! however, i have not yet found their "strongest" flavor
+    - **Update,** 26 Oct. I found the "strongest" flavor. Mediocre.
 10. [captain eli](https://captnelisoda.com/sodas/). much to my chagrin.
 11. [goslings](https://goslings.com/newProduct/goslings-stormy-ginger-beer/). way to sweet.
 12. [fever tree regular](https://fever-tree.com/en-us/products/ginger-beer-light). actively bad. "long-lasting ginger character" ok
 
 Once I boiled a whole chunk of ginger in water and added a bit of sugar. That was good.
+
+Korean markets also sell a nice "ginger drink," which is just 100% ginger powder, and you make tea with it. Also nice.
 
 
 [^1]: non-alcoholic
