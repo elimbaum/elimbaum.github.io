@@ -1,1 +1,1 @@
-[about](/about) \| [readme](/readme) \| [research](/research) \| [resume](/resume)
+[about](/about) \| [readme](/readme) \| [research](/research) \| [teaching](/teaching) \| [resume](/resume)
