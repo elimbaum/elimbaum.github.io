@@ -63,3 +63,38 @@ img.img-right {
   max-width: 100%;
   margin-inline: auto;
 }
+
+// Index post list only
+table.post-list {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    margin-inline: 0;
+    border-collapse: collapse;
+
+    tr {
+        background-color: transparent;
+        border: 0;
+
+        &:nth-child(2n) {
+            background-color: transparent;
+        }
+    }
+
+    td {
+        border: 0;
+        padding: 0.1em 0;
+        vertical-align: baseline;
+    }
+
+    td:first-child {
+        width: 1%;
+        padding-right: 1.25em;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    td:last-child {
+        text-align: left;
+    }
+}
